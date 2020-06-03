@@ -74,6 +74,7 @@ body {
 .email-label,.pass-label{
     font-size: 13px;
     color: rgb(206,206,206);
+    text-transform: uppercase;
 }
 
 input[type=email],input[type=password]{
@@ -101,7 +102,9 @@ input[type=email],input[type=password]{
     0 3.4px 10.5px rgba(0, 0, 0, 0.205),
     0 4.1px 17.5px rgba(0, 0, 0, 0.205);
     background-image: linear-gradient(161deg, #fe8c00 10%, #ff5628 51%, #fe8c00 100%);
+    cursor: pointer;
 }
+
 
 .login-button:hover {
     box-shadow: 0 2.8px 5px rgba(0, 0, 0, 0.212),
@@ -115,6 +118,7 @@ input[type=email],input[type=password]{
 .reset-pass{
     text-decoration: none;
     color: rgb(119,119,119);
+    font-size: 13px;
 }
 
 
