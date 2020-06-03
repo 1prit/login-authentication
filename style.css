@@ -58,7 +58,57 @@ body {
     font-size: 18px;
     text-decoration: none;
     color: rgb(206,206,206);
+    display: inline-block;
+    
+
 }
+
+.signup{
+    border-bottom: 2px solid orange;
+    margin-left: 5px;
+}
+.signup:before{
+    
+}
+.signup:after,.signin:after{
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+
+}
+
+.signup:hover:after,.signin:hover:after  {
+    width: 100%;
+    background: orange;
+    
+  }
+
+.signin:hover,.signup:hover{
+    color: orange;
+}
+
+#sign-in{
+    display: none;
+}
+
+/* .signin:active,.signup:active{
+    background-color: rgb(100,215,196); 
+    color: rgb(206,206,206);
+    border: none;
+    height: 30px;
+    width: 70px;
+    border-radius: 30px;
+    outline: none;
+    box-shadow: 0 2.8px 5px rgba(0, 0, 0, 0.212),
+    0 3.0px 7.5px rgba(0, 0, 0, 0.205),
+    0 3.4px 10.5px rgba(0, 0, 0, 0.205),
+    0 4.1px 17.5px rgba(0, 0, 0, 0.205);
+    background-image: linear-gradient(161deg, #fe8c00 10%, #ff5628 51%, #fe8c00 100%);
+    cursor: pointer;
+} */
 
 .span-or{
     color: rgb(119,119,119);
@@ -67,17 +117,17 @@ body {
     padding: 5px;
 }
 
-.email-field,.password-field{
+.email-field,.password-field,.fullname-field{
     margin-bottom: 25px;
 }
 
-.email-label,.pass-label{
+.email-label,.pass-label,.fullname-label{
     font-size: 13px;
     color: rgb(206,206,206);
     text-transform: uppercase;
 }
 
-input[type=email],input[type=password]{
+input[type=email],input[type=password],input[type=text]{
     background-color: transparent;
     color: orange;
     border: none;
@@ -87,7 +137,7 @@ input[type=email],input[type=password]{
     width: 100%;
 }
 
-.login-button{
+.login-button,.signup__button{
     background-color: rgb(100,215,196); 
     color: rgb(206,206,206);
     border: none;
@@ -106,7 +156,7 @@ input[type=email],input[type=password]{
 }
 
 
-.login-button:hover {
+.login-button:hover,.signup__button:hover {
     box-shadow: 0 2.8px 5px rgba(0, 0, 0, 0.212),
     0 3.0px 7.5px rgba(0, 0, 0, 0.205),
     0 3.4px 10.5px rgba(0, 0, 0, 0.205),
@@ -121,88 +171,43 @@ input[type=email],input[type=password]{
     font-size: 13px;
 }
 
-
-/* .user-panel{
-    margin-top: 25%;
-    margin-left: 15%;
-    
-}
-.user-heading{
-    font-size: 1.5em;
+.cb__div {
+    display: flex;
+    margin-bottom: 25px;
 }
 
-span{
-    padding: 5px;
-    font-size: .6em;
-    color:rgb(119,119,119);
-    margin: 0px 5px 5px 10px;
-}
-
-#sign-in,#sign-up{
-    margin-top: 5%;
-   
-}
-
-input[type=email],input[type=password],input[name="fullname"]{
-   
-    padding: 10px 0px;
-    box-sizing: unset;
-    border: none;
-    border-bottom: 1px solid rgb(119,119,119);
-    outline: none;
-    background-color: transparent;
-    font-size: 13px;
-    line-height: 200%;
-   
-  }
-
-button{
-    background-color: rgb(100,215,196); 
-    border: none;
-    color: white;
-    margin-top: 25px;
-    margin-right: 15px;
-    padding: 8px 32px;
-    text-align: center;
+.tos-link {
+    color: orange;
     text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
-    border-radius: 30px;
-    outline: none;
-
+    font-weight: 500;
 }
 
-button:active{
-    background-color: rgb(31, 236, 236); 
-    border-radius: 30px;
-    border: none;
-} 
-
-input[type=email]{
-      margin-bottom: 20px;
- 
+.cb__input-field {
+    height: 13px;
+    width: 13px;
+    margin: 2px 5px 0px 0px;
 }
 
-
-label{
-    color: rgb(206,206,206);
+.cb__label {
     font-size: 13px;
 
+    color: rgb(119, 119, 119);
 }
 
-a{
-    color: rgb(206,206,206);
+.signin__link {
+    font-size: 13px;
+    color: rgb(119, 119, 119);
     text-decoration: none;
 }
-
-.reset-p{
-    font-size: 13px;
-    color:rgb(119,119,119);
+.button__div a{
+    text-decoration: none;
+}
+button:focus {
+    outline: none;
+}
+.button__div a button {
+    cursor: pointer;
 }
 
 
-input:focus {
-    color: rgb(111, 209, 236);
-} */
 
- 
