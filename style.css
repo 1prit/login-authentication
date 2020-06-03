@@ -1,3 +1,6 @@
+*{
+    font-family: 'Nanum Gothic', sans-serif;
+}
 body {
     margin: 0px;
     height: 100vh;
@@ -5,8 +8,6 @@ body {
     background: linear-gradient(152deg, rgba(167,0,155,1) 0%, rgba(233,63,255,1) 46%, rgba(167,0,141,1) 100%); */
     background-color: #FFE53B;
     background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
-    font-family: 'Nanum Gothic', sans-serif;
-
 }
 
 .main--container {
@@ -45,7 +46,79 @@ body {
     border-bottom-right-radius: 10px;
 }
 
-.user-panel{
+.signin-signup-main{
+    margin: 70px;
+}
+
+.main-heading{
+    margin-bottom: 25px;
+}
+
+.signin,.signup{
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(206,206,206);
+}
+
+.span-or{
+    color: rgb(119,119,119);
+    font-size: 13px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.email-field,.password-field{
+    margin-bottom: 25px;
+}
+
+.email-label,.pass-label{
+    font-size: 13px;
+    color: rgb(206,206,206);
+}
+
+input[type=email],input[type=password]{
+    background-color: transparent;
+    color: orange;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(119,119,119);
+    padding: 10px 0px;
+    width: 100%;
+}
+
+.login-button{
+    background-color: rgb(100,215,196); 
+    color: rgb(206,206,206);
+    border: none;
+    height: 30px;
+    width: 100px;
+    margin-right: 10px;
+    font-size: 13px;
+    border-radius: 30px;
+    outline: none;
+    box-shadow: 0 2.8px 5px rgba(0, 0, 0, 0.212),
+    0 3.0px 7.5px rgba(0, 0, 0, 0.205),
+    0 3.4px 10.5px rgba(0, 0, 0, 0.205),
+    0 4.1px 17.5px rgba(0, 0, 0, 0.205);
+    background-image: linear-gradient(161deg, #fe8c00 10%, #ff5628 51%, #fe8c00 100%);
+}
+
+.login-button:hover {
+    box-shadow: 0 2.8px 5px rgba(0, 0, 0, 0.212),
+    0 3.0px 7.5px rgba(0, 0, 0, 0.205),
+    0 3.4px 10.5px rgba(0, 0, 0, 0.205),
+    0 4.1px 17.5px rgba(0, 0, 0, 0.205),
+    0 6.1px 21.5px rgba(0, 0, 0, 0.205),
+    0 10px 40.5px rgba(0, 0, 0, 0.205);
+    background-position: right center;
+}
+.reset-pass{
+    text-decoration: none;
+    color: rgb(119,119,119);
+}
+
+
+/* .user-panel{
     margin-top: 25%;
     margin-left: 15%;
     
@@ -75,6 +148,7 @@ input[type=email],input[type=password],input[name="fullname"]{
     outline: none;
     background-color: transparent;
     font-size: 13px;
+    line-height: 200%;
    
   }
 
@@ -104,10 +178,6 @@ input[type=email]{
       margin-bottom: 20px;
  
 }
-.sign-in{
-    border-bottom:2px solid rgb(31, 236, 236) ;
-    transition: width 1s;
-}
 
 
 label{
@@ -129,6 +199,6 @@ a{
 
 input:focus {
     color: rgb(111, 209, 236);
-}
+} */
 
  
